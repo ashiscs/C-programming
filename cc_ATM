@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+	int x;
+	float f,c;
+	scanf("%d %f",&x,&f);
+	if((x>0 && x<=2000) && (f>0 && f<=2000))
+	{
+	if(x>f)
+	{
+	    printf("%.2f",f);
+	}
+	else{
+	if(x%5==0 && f>(x+0.5))
+	{
+
+	    c=f-x-0.50;
+	    printf("%.2f",c);
+	}
+	else
+	{
+	    printf("%.2f",f);
+	}
+	}
+	}
+	return 0;
+}
